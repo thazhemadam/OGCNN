@@ -118,9 +118,6 @@ To reproduce our paper, you can download the corresponding datasets following th
 
 This work was primarily done by Rishikesh Magar,Mohammadreza Karamad and Yuting Shi and was advised by Prof. Amir Barati Farimani, CMU
 
-## License
-
-OGCNN is released under the MIT License.
 
 
 
