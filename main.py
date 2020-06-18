@@ -187,7 +187,7 @@ def main():
 
     for epoch in range(args.start_epoch, args.epochs):
         train(train_loader, model, criterion, optimizer, epoch, normalizer)
-        mae_error = validate1(val_loader, model, criterion, normalizer)
+        mae_error = validate(val_loader, model, criterion, normalizer)
 
         if mae_error != mae_error:
             print('Exit due to NaN')
