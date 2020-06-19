@@ -16,7 +16,7 @@ To run the OGCNN code the following packages are required
 - [pymatgen](http://pymatgen.org)
 - [ase](https://wiki.fysik.dtu.dk/ase/)
 
-It is advised to create a new conda environment and the installing the these packages. To create a new environment please refer to the conda documentation on managing environments (https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+It is advised to create a new conda environment and then install these packages. To create a new environment please refer to the conda documentation on managing environments (https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Usage
 
