@@ -23,7 +23,7 @@ from pymatgen.analysis.local_env import VoronoiNN,MinimumDistanceNN
 from ase.io import read,write
 
 def get_train_val_test_loader(dataset, collate_fn=default_collate,
-                              batch_size=64, train_ratio=None,
+                              batch_size=32, train_ratio=None,
                               val_ratio=0.1, test_ratio=0.1, return_test=False,
                               num_workers=1, pin_memory=False, **kwargs):
     """
@@ -85,7 +85,12 @@ def get_train_val_test_loader(dataset, collate_fn=default_collate,
     mask[indices_train] = False
     indices_remain = indices[mask]
     indices_valid = np.random.choice(indices_remain,valid_size,replace=False)
-    indices_test = np.delete(indices_remain,indices_valid)
+    ind_test = []
+    for i in range(len(indices_remain)):
+        if indices_remain[i] not in indices_valid:
+            ind_test.append(indices_remain[i])
+    
+    indices_test = np.asarray(ind_test)
     
     train_sampler = SubsetRandomSampler(indices_train)
     val_sampler = SubsetRandomSampler(indices_valid)
