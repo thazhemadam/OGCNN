@@ -205,8 +205,10 @@ def make_hot_for_atom_i(crystal,i,hvs):
     for el in tmp_X:
         X0 = [[sum(x) for x in zip(el[i], X0[i])] for i in range(len(el))]
     X0  = np.concatenate((A.T,X0),axis = 1)
-    X0 = np.asarray(X0)
-    return X0 
+    X0f =  X0.flatten()
+    X0 = np.asarray(X0f)
+    print(X0,len(X0))
+    return X0
 
 class GaussianDistance(object):
     """
