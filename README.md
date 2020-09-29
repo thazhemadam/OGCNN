@@ -2,6 +2,8 @@
 OGCNN
 This is the repository for our work on property prediction for crystals. In this work we have used ideas from the Orbital Field matrix and Crystal Graph Convolutional Neural Network to predict material properties with a higher accuracy.
 
+Paper link:https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.093801
+
 # Important paper referenced 
 The two important papers referenced for this work are:
 1. Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties (https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301)
